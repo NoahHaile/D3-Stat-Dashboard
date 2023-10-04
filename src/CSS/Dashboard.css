@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.app {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr 10fr; /* Adjust column widths as needed */
+    
+    grid-gap: 0px; /* Adjust the gap between grid items */
+    min-height: 96vh;
+    min-width: 80vw;
+    max-width: 99.9vw;
+    max-height: 100vh;
+    
+    grid-template-areas:
+      "header header"
+      "navbar main"
+      "navbar main";
+      
+      justify-content: space-evenly;
+
+      background-color: whitesmoke;
+      box-sizing: border-box;
+  }
+
+    .header {
+        grid-area: header;
+        background-color: #0052A2;
+    }
+    
+    .navbar {
+        grid-area: navbar;
+        background-color: rgb(222, 222, 222);
+    }
+    
+    .main {
+       
+        grid-area: main;
+        
+    }
+    
+    .footer {
+        
+        grid-area: footer;
+        background-color: rgb(222, 222, 222);
+    }
